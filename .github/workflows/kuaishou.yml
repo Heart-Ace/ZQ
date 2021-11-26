@@ -23,11 +23,11 @@ jobs:
         with:
           node-version: 12.x
       - name: npm install
-        if: env.KSHD
+        if: env.KSHDARR
         run: |
           npm install
       - name: '运行 【快手极速版】'
-        if: env.KSHD
+        if: env.KSHDARR
         run: |
           node Task/ks_js.js
         env:
